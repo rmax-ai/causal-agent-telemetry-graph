@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.turbo/
+.next/
+*.tsbuildinfo
+**/uv.lock
+__pycache__/
+*.pyc
+.kuzu/
+*.db
+*.db-journal
+*.db-wal
+.env
+.envrc
+!.envrc.example
