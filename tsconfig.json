@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/schema" },
+    { "path": "packages/canonical-json" },
+    { "path": "packages/event-ledger" },
+    { "path": "packages/graph-model" }
+  ]
+}
