@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catg-adr-bridge"
+version = "0.1.0"
+description = "CATG ADR Sensor invocation bridge"
+requires-python = ">=3.12"
+
+[project.scripts]
+catg-adr = "adr_bridge.cli:main"
+
+[tool.setuptools]
+packages = ["adr_bridge"]

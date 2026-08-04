@@ -1,0 +1,20 @@
+{
+  "name": "@catg/graph-projection",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@catg/event-ledger": "workspace:*",
+    "@catg/graph-model": "workspace:*",
+    "@catg/schema": "workspace:*",
+    "kuzu": "0.11.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "type": "message",
+      "id": "wrapped-1",
+      "session_id": "sess-wrapped",
+      "role": "assistant",
+      "content": "I will investigate.",
+      "sequence_id": 2,
+      "timestamp": "2026-08-04T09:10:00Z"
+    }
+  ]
+}

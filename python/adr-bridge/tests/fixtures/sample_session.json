@@ -1,0 +1,65 @@
+{
+  "events": [
+    {
+      "type": "session",
+      "id": "sess-001",
+      "started_at": "2026-08-04T09:00:00Z",
+      "principal_id": "user-alice",
+      "agent_id": "agent-claude",
+      "title": "Investigate credential leak"
+    },
+    {
+      "type": "run.started",
+      "id": "run-1",
+      "session_id": "sess-001",
+      "objective": "Trace leaked credential path",
+      "started_at": "2026-08-04T09:00:01Z"
+    },
+    {
+      "type": "message",
+      "id": "msg-1",
+      "session_id": "sess-001",
+      "role": "user",
+      "content": "Find where the API key leaked",
+      "sequence_id": 1,
+      "token_count": 9,
+      "timestamp": "2026-08-04T09:00:02Z"
+    },
+    {
+      "type": "tool_call",
+      "id": "call-1",
+      "tool_name": "grep",
+      "arguments": { "pattern": "AKIA", "path": "/var/log" },
+      "status": "succeeded",
+      "session_id": "sess-001",
+      "message_id": "msg-2",
+      "output": "no match",
+      "is_error": false,
+      "duration_ms": 12,
+      "timestamp": "2026-08-04T09:00:03Z"
+    },
+    {
+      "type": "tool_result",
+      "id": "res-1",
+      "call_id": "call-2",
+      "content": "found 3 matches",
+      "is_error": false,
+      "exit_code": 0,
+      "duration_ms": 8,
+      "timestamp": "2026-08-04T09:00:04Z"
+    },
+    {
+      "type": "model_invocation",
+      "id": "inv-1",
+      "model_id": "claude-sonnet-4",
+      "provider": "anthropic",
+      "operation": "chat",
+      "input_tokens": 1200,
+      "output_tokens": 340,
+      "finish_reason": "end_turn",
+      "latency_ms": 2450,
+      "started_at": "2026-08-04T09:00:05Z",
+      "completed_at": "2026-08-04T09:00:07.45Z"
+    }
+  ]
+}

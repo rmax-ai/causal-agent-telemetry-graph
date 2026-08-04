@@ -1,0 +1,20 @@
+{
+  "name": "@catg/ingestion-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@catg/canonical-json": "workspace:*",
+    "@catg/event-ledger": "workspace:*",
+    "@catg/schema": "workspace:*",
+    "zod": "^4.4.3"
+  }
+}

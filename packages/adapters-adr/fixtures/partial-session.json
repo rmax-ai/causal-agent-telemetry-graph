@@ -1,0 +1,18 @@
+[
+  {
+    "event_id": "evt-session-partial",
+    "event_type": "session",
+    "agent_id": "agent-7",
+    "session_id": "sess-partial-001",
+    "started_at": "2026-08-04T10:00:00Z",
+    "messages": [
+      {
+        "message_id": "msg-pt-001",
+        "role": "user",
+        "content": "Start a new project",
+        "timestamp": "2026-08-04T10:00:05Z"
+      }
+    ],
+    "status": "in-progress"
+  }
+]

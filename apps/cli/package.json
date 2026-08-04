@@ -1,0 +1,23 @@
+{
+  "name": "@catg/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@catg/adapters-adr": "workspace:*",
+    "@catg/event-ledger": "workspace:*",
+    "@catg/graph-projection": "workspace:*",
+    "@catg/ingestion-core": "workspace:*",
+    "@catg/schema": "workspace:*",
+    "commander": "^15.0.0",
+    "kuzu": "0.11.3"
+  }
+}

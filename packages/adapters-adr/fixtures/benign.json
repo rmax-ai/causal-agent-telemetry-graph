@@ -1,0 +1,26 @@
+[
+  {
+    "event_id": "evt-session-benign",
+    "event_type": "session",
+    "agent_id": "agent-42",
+    "session_id": "sess-benign-001",
+    "started_at": "2026-08-04T10:00:00Z",
+    "messages": [
+      {
+        "message_id": "msg-001",
+        "role": "user",
+        "content": "What is the capital of France?",
+        "timestamp": "2026-08-04T10:00:05Z"
+      },
+      {
+        "message_id": "msg-002",
+        "role": "assistant",
+        "content": "The capital of France is Paris.",
+        "timestamp": "2026-08-04T10:00:08Z"
+      }
+    ],
+    "tool_calls": [],
+    "status": "completed",
+    "ended_at": "2026-08-04T10:01:00Z"
+  }
+]

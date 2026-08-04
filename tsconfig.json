@@ -4,6 +4,10 @@
     { "path": "packages/schema" },
     { "path": "packages/canonical-json" },
     { "path": "packages/event-ledger" },
-    { "path": "packages/graph-model" }
+    { "path": "packages/graph-model" },
+    { "path": "packages/adapters-adr" },
+    { "path": "packages/ingestion-core" },
+    { "path": "packages/graph-projection" },
+    { "path": "apps/cli" }
   ]
 }
